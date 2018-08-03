@@ -1,6 +1,6 @@
-function fib(n){
+function fact(n){
 if (n==1||n==2) return 1;
-else return fib(n - 2) + fib(n - 1);
+else return fact(n - 1) + fact(n - 2);
 }
-const n=+prompt('введіть номер числа');
-alert(fib(n));
+const n=parseInt(prompt('введіть номер числа'));
+alert(fact(n));
